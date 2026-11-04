@@ -1,11 +1,12 @@
-import Footer from "./Footer";
 import Header from "./Header";
+import Footer from "./Footer";
 
 function App() {
   return (
     <div className="container" div>
       <Header />
-      <p>Pokémon trainer from Pallet Town.</p>
+      <p>My birthday is November 24, 1985.</p>
+      <p>This will be my main project and porfolio for this courese </p>
       <Footer />
     </div>
   );
