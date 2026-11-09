@@ -5,11 +5,11 @@ import Hero from "./Hero";
 
 function App() {
   return (
-    <div className="container" div>
+    <div className="container">
       <Header />
       <Hero /> Airplane Window
       <p>My birthday is November 24, 1985.</p>
-      <p>This will be my main project and porfolio for this courese </p>
+      <p>This will be my main project and portfolio for this course </p>
       <Fortune />
       <Footer />
     </div>
