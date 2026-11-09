@@ -2,7 +2,7 @@ import heroPhoto from "./hero-photo.js";
 import "./hero.css";
 
 function Hero() {
-  const [src, alt] = heroPhoto(1200, 500, "Flowers in a clay vase");
+  const [src, alt] = heroPhoto(1200, 500, 0, "Flowers in a clay vase");
   return (
     <div className="hero">
       <img src={src} alt={alt} />
