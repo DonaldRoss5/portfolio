@@ -1,7 +1,6 @@
 function PotterHousePortfolioCard() {
-  let name = "Data Playlist";
-  let description =
-    "A playlist page that loads its songs from my own data API.";
+  let name = "Potter House";
+  let description = "A capstone that loads its page from my own data.";
   let liveUrl = "https://donaldross5.github.io/capstone-level-2-/";
   let repoUrl =
     "https://github.com/DonaldRoss5/capstone-level-2-/deployments/github-pages";

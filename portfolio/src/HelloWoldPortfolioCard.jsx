@@ -1,6 +1,6 @@
 function HelloWorldPortfolioCard() {
-  let name = "Data Card list";
-  let description = "A card page that loads its list from my own data API.";
+  let name = "Hello World Portfolio";
+  let description = "A card page that loads its list from my own data.";
   let liveUrl = "https://donaldross5.github.io/hello-world-2026/";
   let repoUrl =
     "https://github.com/DonaldRoss5/hello-world-2026/deployments/github-pages";
