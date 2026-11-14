@@ -6,10 +6,10 @@ A React site that shows the projects I built in Level 2.
 
 | Component | What it shows | Where its values come from | What it remembers |
 | --- | --- | --- | --- |
-| `Header` | my name | written in the component | — |
-| `Hero` | my hero photo | `heroPhoto`, which calls `imageUrl` | whether the photo is in color |
+| `Header` | my name | written in the component |
+| `Hero` | my hero photo |`heroPhoto`, which calls `imageUrl` | whether the photo is in color |
 | `Fortune` | a random fortune | a list and `randomNumber` | which fortune is showing |
-| `Footer` | © year and my name | `new Date()` | — |
+| `Footer` | © year and my name | `new Date()` |
 
 ## What I'm adding next
 
