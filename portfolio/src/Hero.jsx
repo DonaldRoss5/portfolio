@@ -4,16 +4,20 @@ import "./hero.css";
 
 function Hero() {
   const photos = [
-    "photo-1794136278466-43e7a45d723d",
+    {
+      id: "photo-1794136278466-43e7a45d723d",
+      description: "Flowers in a clay vase",
+    },
 
-    "photo-1794259917067-039df98cf3e8",
+    {
+      id: "photo-1794259917067-039df98cf3e8",
+      description: "A river valley at sunrise",
+    },
 
-    "photo-1794436302258-637318a9a365",
-  ];
-  const descriptions = [
-    "Flowers in a clay vase",
-    "A river valley at sunrise",
-    "A hiker above forested hills",
+    {
+      id: "photo-1794436302258-637318a9a365",
+      description: "A hiker above forested hills",
+    },
   ];
 
   const [index, setIndex] = useState(0);
@@ -43,13 +47,10 @@ function Hero() {
     setSat(-100);
   };
 
-  const [src, alt] = heroPhoto(
-    photos[index],
-    1200,
-    500,
-    sat,
-    descriptions[index],
-  );
+  const { id, description } = photos[index];
+
+  const [src, alt] = heroPhoto({ photo: id, width: 1200, height: 500, sat, description })
+
 
   return (
     <div>
