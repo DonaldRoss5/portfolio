@@ -1,14 +1,13 @@
 import { useState } from "react";
 
 function HelloWorldPortfolioCard() {
-  let name = "Hello World Portfolio";
-  let description = "A card page that loads its list from my own data.";
-
-  let details =
-    "I built it in Level 2 to practice click listeners and the counter pattern.";
-  let liveUrl = "https://donaldross5.github.io/hello-world-2026/";
-  let repoUrl =
-    "https://github.com/DonaldRoss5/hello-world-2026/deployments/github-pages";
+  const project = {
+    name: "Hello World Portfolio",
+    description: "A card page that loads its list from my own data.",
+    liveUrl: "https://donaldross5.github.io/hello-world-2026/",
+    repoUrl:
+      "https://github.com/DonaldRoss5/hello-world-2026/deployments/github-pages",
+  };
 
   const [likes, setLikes] = useState(0);
   const [open, setOpen] = useState(false);
@@ -21,9 +20,9 @@ function HelloWorldPortfolioCard() {
     setOpen(!open);
   };
 
-  let text = description;
+  let text = project.description;
   if (open) {
-    text = description + " " + details;
+    text = project.description + " " + project.details;
   }
 
   let label = "Show More";
@@ -33,12 +32,12 @@ function HelloWorldPortfolioCard() {
 
   return (
     <article>
-      <h2>{name}</h2>
+      <h2>{project.name}</h2>
       <p>{text}</p>
       <button onClick={toggleOpen}>{label}</button>
       <p>
-        <a href={liveUrl}>https://donaldross5.github.io/hello-world-2026/</a> ·{" "}
-        <a href={repoUrl}>
+        <a href={project.liveUrl}>https://donaldross5.github.io/hello-world-2026/</a> ·{" "}
+        <a href={project.repoUrl}>
           https://github.com/DonaldRoss5/hello-world-2026/deployments/github-pages
         </a>
       </p>
