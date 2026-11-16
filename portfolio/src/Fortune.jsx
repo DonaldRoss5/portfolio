@@ -1,4 +1,6 @@
 
+import { useState } from "react";
+
 const randomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
